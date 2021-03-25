@@ -1,54 +1,68 @@
 const Discord = require("discord.js")
 const fs = require("fs")
+const ascii = require('ascii-table');
+/*
+const intents = new Discord.Intents();
+intents.add("GUILD_MESSAGES");
+const client = new Discord.Client({ intents: intents }); // UPDATE TO USE INTENTS
+*/
 const client = new Discord.Client()
 
-const config = require("./config.js"); //The bot connects using the configuration file
+const config = require("./config.js"); // config
 
 
-const { Player } = require("discord-player"); //Create a new Player (Youtube API key is your Youtube Data v3 key)
-
-const player = new Player(client); //To easily access the player
-
-client.player = player;
 client.commands = new Discord.Collection();
 client.aliases =  new Discord.Collection();
+
 client.config = require('./config.js');
 client.emotes = client.config.emotes;
 client.colors = client.config.colors;
+client.items = require("./json/items.js")
+client.secretItems = require("./json/secretItems.js")
+let table = new ascii("Commands")
 
-fs.readdir("./commands/", (err, files) => {
-    //it will filter all the files in commands directory with extension .js
-    let jsfile = files.filter(f => f.split(".").pop() === "js")
-    //this will be executed if there is no files in command folder with extention .js
-    if(jsfile.length <= 0) return console.log("Could not find any commands!");
-    //it's similar to for loop
-    jsfile.forEach((f, i) => { 
-     //it will log all the file names with extension .js
-    console.log(`Loaded ${f}!`);
-        
-    let pull = require(`./commands/${f}`);
-   
-    client.commands.set(pull.config.name, pull);  
-    pull.config.aliases.forEach(alias => {
-    client.aliases.set(alias, pull.config.name)
-                
-    });
-})});
 
-client.on("ready", () => {
 
-    console.log("The bot is ready to play music"); //If the bot is ready it sends a message in the console
-    //It will count all voice channels in which bot is connected, if none it will return 0
+
+
+fs.readdirSync("./commands").forEach(dir => {
+  const commands = fs.readdirSync(`commands/${dir}/`).filter(f => f.split(".").pop() === 'js')
+  for(let file of commands) {
+    let pull = require(`./commands/${dir}/${file}`)
+    if(pull.config.name) {
+      client.commands.set(pull.config.name, pull)
+      table.addRow(file, "✅")
+    } else {
+      table.addRow(file, "❌ -> Missing name or name isn't string")
+      continue
+    }
+
+
+    if (pull.config.aliases && Array.isArray(pull.config.aliases)) pull.config.aliases.forEach(alias => client.aliases.set(alias, pull.config.name));
+  }
+})
+console.log(table.toString())
+
+
+
+
+
+
+
+client.once("ready", () => {
+
+    console.log("Logged in as " + client.user.tag); 
+    
     let playing = client.voice.connections.size; 
-    //It will set the bot status to streaming
-    client.user.setPresence({ activity: { name: `music on ${playing}`, type: "STREAMING", url: "https://twitch.tv/hydroxin" } })
+
+     client.user.setPresence({ activity: { name: `hehe`, type: "STREAMING", url: "https://www.twitch.tv/piptea_" } })
 
 });
 
 client.on('message', async message => {
-  
+
+ 
    if(!message.guild || message.author.bot) return;
-        
    if (message.content.indexOf(config.prefix) !== 0) return;
 
    let args = message.content.slice(config.prefix.length).trim().split(" ");
@@ -65,4 +79,4 @@ client.on('message', async message => {
         
 });
 
-client.login(config.token_bot); //This is the heart of the bot
+client.login(client.config.token); //This is the heart of the bot
