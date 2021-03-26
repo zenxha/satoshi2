@@ -46,14 +46,10 @@ module.exports.run = async (client, message, args, prefix) => {
     // const luckyItem = randomValue(items[randomKey(items)]) // for ALL items
 
  
-    let common = db.get(`${target.id}.stats.common`)
-    let uncommon = db.get(`${target.id}.stats.uncommon`)
-    let rare = db.get(`${target.id}.stats.rare`)
-    let legendary = db.get(`${target.id}.stats.legendary`)
-    if(common == undefined) common = 0
-    if(uncommon == undefined) uncommon = 0
-    if(rare == undefined) rare = 0
-    if(legendary == undefined) legendary = 0
+    let common = db.get(`${target.id}.stats.common`) || 0
+    let uncommon = db.get(`${target.id}.stats.uncommon`) || 0
+    let rare = db.get(`${target.id}.stats.rare`) || 0
+    let legendary = db.get(`${target.id}.stats.legendary`) || 0
 
     // /* for only ones in inv
     const luckyKey = randomKey(inv)
@@ -74,5 +70,7 @@ module.exports.run = async (client, message, args, prefix) => {
 module.exports.config = {
   name: "stats",
   aliases: ["s"], 
-  usage: "!stats"
+  category: "fun",
+  description: "See your (or someone else's) gacha stats",
+  usage: "!stats mrricebox"
 }
