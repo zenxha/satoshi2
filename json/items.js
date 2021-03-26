@@ -19,7 +19,7 @@ module.exports =
 		"yu seki": {
 			"name": "Yu Seki",
 			"role": "Drums",
-			"image": "https://kprofiles.com/wp-content/uploads/2020/12/yuu.jpg",
+			"image": "https://www.nautiljon.com/images/people/01/72/seki_yu_king_gnu_106927.jpg",
 			"unit": "King Gnu",
 			"description": "\"DID YOU SANITIZE??\"",
 			"birthyear": 1992,
@@ -157,7 +157,25 @@ module.exports =
 			"description": "Speaks Portuguese",
 			"birthyear": 1999, 
 			"rarity": common
-			}, 
+		}, 
+		"sirup": { 
+			"name": "SIRUP", 
+			"role": "Soloist",
+			"image": "https://static.wikia.nocookie.net/jpop/images/c/ca/SIRUP_%28January_2020%29.jpg/revision/latest/top-crop/width/450/height/450?cb=20200907211520",
+			"unit": "N/A",
+			"description": "SING + RAPPU = SIRUP",
+			"birthyear": 1987, 
+			"rarity": common
+		}, 
+		"yonce": { 
+            "name": "Yonce", 
+            "role": "Vocals",
+            "image": "http://sheep-run-away.com/wp-content/uploads/2016/09/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2016-09-04-22.53.25.png",
+            "unit": "SUCHMOS",
+            "description": "He likes to stay tune in Tokyo Friday night.",
+            "birthyear": 1991,
+            "rarity": common
+        },
 	},
 	"uncommon": {
 		"daisuke ozasa": {
@@ -246,8 +264,8 @@ module.exports =
 			"role": "Utaite",
 			"image": "https://static.utaitedb.net/img/artist/mainThumb/23501.jpg?v=3",
 			"unit": "N/A",
-			"description": "None found",
-			"birthyear": "Unknown",
+			"description": "Healthier than you think",
+			"birthyear": 2002,
 			"rarity": uncommon
 			},
 		"kanaria": { 
@@ -295,7 +313,42 @@ module.exports =
 			"birthyear": 1990,
 			"rarity": uncommon
 			}, 
-		
+		"reol": { 
+            "name": "Reol", 
+            "role": "Vocals/Rap ",
+            "image": "https://is5-ssl.mzstatic.com/image/thumb/Features114/v4/76/0b/a0/760ba08e-bc55-f6f9-2b4a-5dbd7d246add/mzl.zudzpnsc.jpg/800x800bb.jpeg",
+            "unit": "REOL",
+            "description": "Short",
+            "birthyear": 1993,
+            "rarity": uncommon
+        },
+		"kenji mihara": { 
+			"name": "Kenji Mihara", 
+			"role": "Vocals/Bass",
+			"image": "http://www.billboard-japan.com/scale/news/00000085/85493/800x_sub_image200120.jpg",
+			"unit": "Frederic",
+			"description": "If you're a night you better be dancing",
+			"birthyear": 1990,
+			"rarity": uncommon
+			},
+		"miliyah kato": { 
+            "name": "Miliyah Kato", 
+            "role": "Soloist",
+            "image": "http://t0.gstatic.com/images?q=tbn:ANd9GcSG4YMKNt0pr8ytzkeKP5qE-cuJ4NgqM8q5p1xDZZ61W8cMLKM4O0RUI3yEtvc3",
+            "unit": "N/A",
+            "description": "Modern r&b queen",
+            "birthyear": 1988,
+            "rarity": uncommon
+        },
+		"Ayumi hamasaki": { 
+            "name": "Ayumi Hamasaki", 
+            "role": "Vocals/Composition/Lyrics",
+            "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcQcOe8cGsmK2-nkmjkRPvZURSnQ_ZNehD-gMv2FOyV_aw_YKJc1FFuWPtVwIval",
+            "unit": "N/A",
+            "description": "Empress of J-Pop",
+            "birthyear": 1978,
+            "rarity": uncommon
+        },
 	},
 	"rare": {
 		"leo fujii": {
@@ -393,7 +446,7 @@ module.exports =
 			"role": "Vocals/Lyrics/Composition/Bass/Guitar",
 			"image": "https://lyricstranslate.com/files/styles/large/public/images_474.jpg?itok=Igp9f0dS",
 			"unit": "Yorushika",
-			"birthyear": "Unknown",
+			"birthyear": 1996,
 			"description": "Has a very good taste in jazz memes",
 			"rarity": rare
 			},
@@ -442,7 +495,7 @@ module.exports =
 			"birthyear": "Unknown <:blurry:699713975075733507>",
 			"rarity": rare
 		},
-		"Maguro Taniguchi": { 
+		"maguro taniguchi": { 
 			"name": "Maguro Taniguchi", 
 			"role": "Vocals/Guitar",
 			"image": "https://static.wikia.nocookie.net/visualkei/images/a/a2/Maguro_Taniguchi_08.jpg/revision/latest/scale-to-width-down/340?cb=20200304230256&path-prefix=es",
@@ -450,7 +503,53 @@ module.exports =
 			"description": "non provided",
 			"birthyear": 1990,
 			"rarity": rare
-			},
+		},
+		"vaundy": { 
+			"name": "Vaundy", 
+			"role": "Vocals/Composition/Lyrics",
+			"image": "https://stat.ameba.jp/user_images/20201016/12/716nanairo-moko/90/13/j/o0500062514835648062.jpg?cpd=800",
+			"unit": "N/A",
+			"description": "He's still in uni (wtf)",
+			"birthyear": 2000,
+			"rarity": rare
+		},
+		"hiro": {
+			"name": "Hiroki Moriuchi",
+			"role": "Vocals/Guitar",
+			"image": "https://pbs.twimg.com/media/EVzbV6DWAAELOPJ.jpg",
+			"unit": "MY FIRST STORY", 
+			"description": "OOR Taka's younger brother",
+			"birthyear": 1994,
+			"rarity": rare
+		},
+
+		"yoh kamiyama": { 
+            "name": "Yoh Kamiyama", 
+            "role": "Soloist/Vocaloid Producer ",
+            "image": "https://is3-ssl.mzstatic.com/image/thumb/Features124/v4/de/72/f9/de72f9e2-ba4e-3610-b17f-19d1ac3755fb/mzl.bflpivzf.jpg/800x800bb.jpeg",
+            "unit": "N/A",
+            "description": ":yellow_circle: :yellow_circle:",
+            "birthyear": "Unknown",
+            "rarity": rare
+        },
+		"kiro akiyama": { 
+            "name": "Kiro Akiyama", 
+            "role": "Soloist",
+            "image": "https://static.wikia.nocookie.net/jpop/images/f/fc/Akiyama_Kiro.jpg/revision/latest/scale-to-width-down/619?cb=20210101201719",
+            "unit": "N/A",
+            "description": "Can't see you.",
+            "birthyear": 1996,
+            "rarity": rare
+        },
+		"sayuri": { 
+            "name": "Sayuri", 
+            "role": "Vocals/Composition/Lyrics ",
+            "image": "https://images.genius.com/87049dd0101ce8f5401d12016ab8e805.542x542x1.jpg",
+            "unit": "N/A",
+            "description": "likes to perform barefoot :foot: ",
+            "birthyear": 1996,
+            "rarity": rare
+		},
 	},
 	"legendary": {
 		"satoshi fujihara": {
@@ -507,7 +606,7 @@ module.exports =
 			"role": "Vocals/Composition/Lyrics/Guitar",
 			"image": "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2018/12/7911a96a4116788ae9fc6a4f7b5016e3.jpg",
 			"unit": "N/A",
-			"description": "Started playing piano recently",
+			"description": ":spaghetti: :eyes: ??",
 			"birthyear": 1995,
 			"rarity": legendary
 		},
@@ -590,6 +689,15 @@ module.exports =
             "unit": "Cubic U (inactive since 1998)",
             "description": "your First Love will always be the one",
             "birthyear": 1983,
+            "rarity": legendary
+        },
+		"shiina ringo": { 
+            "name": "Shiina Ringo", 
+            "role": "Vocals/Composition",
+            "image": "https://i.discogs.com/A-2258062-1447267048-3942.jpeg?bucket=discogs-images&fit=contain&format=auto&height=296&quality=90&width=500&signature=QQn7mRZQOMS3rGShM6PLaaHbhHwJ1AwERsq0aKUNTJU%3D",
+            "unit": "Tokyo Jihen",
+            "description": ":musical_note: I'll never be able to give up on you, don't say goodbye and kiss me once again.\n> - Taken from her best selling 1999 song *Koko de Kisu Shite*.",
+            "birthyear": 1978,
             "rarity": legendary
         },
 

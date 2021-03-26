@@ -55,7 +55,7 @@ client.once("ready", () => {
     
     let playing = client.voice.connections.size; 
 
-     client.user.setPresence({ activity: { name: `hehe`, type: "STREAMING", url: "https://www.twitch.tv/piptea_" } })
+     client.user.setPresence({ activity: { name: `cheer up baby`, type: "STREAMING", url: "https://www.twitch.tv/piptea_" } })
 
 });
 

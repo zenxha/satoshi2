@@ -1,3 +1,7 @@
+const db = require('quick.db')
+const configdb = require('quick.db')
+
+
 module.exports = {
     "ownerid": "303901005710360576",
     "prefix": "!",
@@ -6,6 +10,7 @@ module.exports = {
     "supportServer": "https://discord.gg/gMtauTz", //if any
     "testers": ["303901005710360576", "702380673624703047"],
     "logChannels": ['824470041155207188',  '810243870246961182'],
+    "logchannels": configdb.get('rollLogChannels'),
     "colors": {
       "error": 15866927,
       "success": "#1880e4",

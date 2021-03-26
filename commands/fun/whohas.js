@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args, prefix) => {
                 id: user['ID'],
                 amount: user['data']['inventory'][queryString]
             }
-            peopleWith.push(userObject)
+            if(match) peopleWith.push(userObject)
         }
        
     })
@@ -59,14 +59,14 @@ module.exports.run = async (client, message, args, prefix) => {
          client.users.fetch(person.id)
          .then(table.addRow(peopleWith.indexOf(person) + 1, person.amount, client.users.cache.get(person.id).tag))
     })
-    console.log(peopleWith.length)
+    // console.log(peopleWith.length)
     const embed = new Discord.MessageEmbed()
     .setAuthor("Users who have "+ queryString)
     .setDescription("```css\n" + table + "```")
     .setThumbnail(items[rarity][queryString]['image'])
     .setColor(client.colors[rarity])
    
-    if(!peopleWith[1]) embed.setDescription("```css\n" + table + "```\n  " + client.users.cache.get(peopleWith[0].id).username + ` and ${queryString} <:distorted:706579468310937631>`)
+    if(!peopleWith[1]) embed.setDescription("```css\n" + table + "```\n  only " + client.users.cache.get(peopleWith[0].id).username + ` and ${queryString} <:distorted:706579468310937631>`)
    
     message.channel.send(embed)
 } 

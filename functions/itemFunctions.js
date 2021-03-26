@@ -18,8 +18,13 @@ const getRarity = (luckyKey) => {
 }
 
 
+const getCount = () => {
+  const total = Object.keys(items['common']).length + Object.keys(items['uncommon']).length + Object.keys(items['rare']).length + Object.keys(items['legendary']).length
+  return total
+}
 module.exports = {
 randomValue,
 randomKey,
-getRarity
+getRarity,
+getCount
 }

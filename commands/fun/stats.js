@@ -1,13 +1,8 @@
 const Discord = require("discord.js")
 const db = require('quick.db')
-const { randomValue, randomKey, getRarity } = require("../../functions/itemFunctions.js")
+const { randomValue, randomKey, getRarity, getCount } = require("../../functions/itemFunctions.js")
 const items = require('../../json/items.js')
 module.exports.run = async (client, message, args, prefix) => {
-
-    let  uncommon = 0
-    let common = 0
-    let legendary = 0
-    let rare = 0
 
     let target =
     message.mentions.members.first() ||
@@ -27,6 +22,14 @@ module.exports.run = async (client, message, args, prefix) => {
     .setDescription(`No inventory found for that user, try \`${prefix}roll\` first`)
     .setColor(client.colors.warning)
     if(inv === null) return message.channel.send(error)
+
+    const foundCount = Object.keys(inv).length
+    const totalCount = getCount()
+
+
+
+
+    /*
     Object.entries(inv).forEach(entry => {
         if (entry[0] in items.common)  {
             common = common + entry[1];
@@ -37,12 +40,20 @@ module.exports.run = async (client, message, args, prefix) => {
         // description.push(`${entry[0]} \n> **${entry[1]}x** `)
 
   })
+    //STORING COUNTS IN DB NOW
+  */
     // embed.setDescription(description.join('\n'))
     // const luckyItem = randomValue(items[randomKey(items)]) // for ALL items
-    db.set(`${target.id}.stats.common`, common)
-    db.set(`${target.id}.stats.uncommon`, uncommon)
-    db.set(`${target.id}.stats.rare`, rare)
-    db.set(`${target.id}.stats.legendary`, legendary)
+
+ 
+    let common = db.get(`${target.id}.stats.common`)
+    let uncommon = db.get(`${target.id}.stats.uncommon`)
+    let rare = db.get(`${target.id}.stats.rare`)
+    let legendary = db.get(`${target.id}.stats.legendary`)
+    if(common == undefined) common = 0
+    if(uncommon == undefined) uncommon = 0
+    if(rare == undefined) rare = 0
+    if(legendary == undefined) legendary = 0
 
     // /* for only ones in inv
     const luckyKey = randomKey(inv)
@@ -50,12 +61,9 @@ module.exports.run = async (client, message, args, prefix) => {
     let rarity = getRarity(luckyKey)
     const luckyItem = items[rarity][luckyKey]
     // */
-    const total = common + uncommon + rare + legendary   
-
-     // db.set(`${target.user.id}.totalRolls`, total)
 
     const embed = new Discord.MessageEmbed()
-    .setDescription(`Commons \n> ${common}\n Uncommons \n> ${uncommon}\n Rares\n> ${rare}\n Legendaries\n> ${legendary}`)
+    .setDescription(`Commons \n> ${common}\n Uncommons \n> ${uncommon}\n Rares\n> ${rare}\n Legendaries\n> ${legendary}\n\n**${foundCount}/${totalCount} found**`)
     .setAuthor(`${target.user.username}'s stats`, target.user.avatarURL())
     .setThumbnail(luckyItem.image)
     .setFooter(`Featuring ${luckyItem.name}`)
