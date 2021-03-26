@@ -1,10 +1,8 @@
-# Discord-Music
+# Satoshi
 
-Discord Music is an open-source Discord music bot!
+Bot for jzone and personal stuff
 
-## Discord Server
 
-If you have any issue feel free to contact me on Discord (https://discord.gg/xuu6ytN)
 
 ## Installation
 
@@ -25,9 +23,8 @@ Go and edit in config/bot.json, make changes below to use it!
 
 ```json
 {
-    "prefix": "Your Bot Prefix", 
-    "token_bot": "Your Discord Bot Token",
-    "youtube_api": "Your YouTube API Key"
+    "prefix": "bot prefix", 
+    "token": "token"
 }
 
 ```
