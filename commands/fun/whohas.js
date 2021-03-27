@@ -48,6 +48,7 @@ module.exports.run = async (client, message, args, prefix) => {
     const table = new ascii()
     table.setHeading('#', "Count", "User")
     table.setHeadingAlignLeft()
+    table.removeBorder()
 
     peopleWith.sort((a, b) => {
         return b.amount-a.amount
@@ -75,5 +76,6 @@ module.exports.config = {
   name: "whohas",
   description: "See who has a certain person ",
   aliases: ["wh", "hv"], 
-  usage: "!whohas Satoshi Fujihara"
+  usage: "!whohas Satoshi Fujihara",
+  category: 'fun',
 }

@@ -58,10 +58,10 @@ db.add(`${message.author.id}.totalRolls`, 1)
 setTimeout(() => {
   msg.edit("**You rolled...**", {embed: embed});
 }, 4000)
-
+const msgLink = `https://discord.com/channels/${message.guild.id}/${message.channel.id}/${msg.id}`
 const logEmbed = await new Discord.MessageEmbed()
 .setAuthor(message.author.tag, message.author.avatarURL())
-.setDescription(`<@${message.author.id}> rolled ${rolled.name} in **${message.guild.name}**\n**Rarity**: ${rolled.rarity}\n**User ID** ${message.author.id} \n**Guild ID** ${message.guild.id}`)
+.setDescription(`<@${message.author.id}> rolled ${rolled.name} in [**${message.guild.name}**](${msgLink})\n**Rarity**: ${rolled.rarity}\n**User ID** ${message.author.id} \n**Guild ID** ${message.guild.id}`)
 .setColor(client.colors[rarity])
 .setTimestamp()
 .setThumbnail(rolled.image)
@@ -82,7 +82,8 @@ module.exports.config = {
   name: "roll",
   description: "roll for someone",
   aliases: ['r'],
-  usage: ['!r']
+  usage: ['!r'],
+  category: 'fun',
 }
 
 

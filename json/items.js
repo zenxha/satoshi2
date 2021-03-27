@@ -14,7 +14,6 @@ module.exports =
 			"description": "Tries to be funny but fails, making him funny",
 			"birthyear": 1993,
 			"rarity": common,
-		
 		},
 		"yu seki": {
 			"name": "Yu Seki",
@@ -176,6 +175,24 @@ module.exports =
             "birthyear": 1991,
             "rarity": common
         },
+		"meychan": { 
+            "name": "Meychan", 
+            "role": "Utaite ",
+            "image": "https://pbs.twimg.com/profile_images/1258715694473986049/wv_Jbk8M_400x400.jpg",
+            "unit": "N/A",
+            "description": "loud",
+            "birthyear": 1996,
+            "rarity": common
+		},
+		"ivudot": { 
+            "name": "Ivudot", 
+            "role": "Utaite",
+            "image": "https://static.wikia.nocookie.net/nicodougasingers/images/e/ef/Ivudot_By-Subasu_2018-12-15.png/revision/latest/scale-to-width-down/340?cb=20181225061602",
+            "unit": "N/A",
+            "description": "lol he's looking at you weird what did you do",
+            "birthyear": 1997,
+            "rarity": common
+		},
 	},
 	"uncommon": {
 		"daisuke ozasa": {
@@ -296,7 +313,7 @@ module.exports =
             "rarity": uncommon
         },
 		"chelly": { 
-            "name": "chelly from EGOIST", 
+            "name": "Chelly", 
             "role": "Vocals",
             "image": "https://images6.fanpop.com/image/photos/32200000/EGOIST-egoist-32247527-985-979.jpg",
             "unit": "EGOIST",
@@ -340,7 +357,7 @@ module.exports =
             "birthyear": 1988,
             "rarity": uncommon
         },
-		"Ayumi hamasaki": { 
+		"ayumi hamasaki": { 
             "name": "Ayumi Hamasaki", 
             "role": "Vocals/Composition/Lyrics",
             "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcQcOe8cGsmK2-nkmjkRPvZURSnQ_ZNehD-gMv2FOyV_aw_YKJc1FFuWPtVwIval",
@@ -349,6 +366,15 @@ module.exports =
             "birthyear": 1978,
             "rarity": uncommon
         },
+		"kihow": { 
+            "name": "kihow", 
+            "role": "Vocals",
+            "image": "https://www.nihonarachochonight.com/wp-content/uploads/2020/08/KIHOW-Web-660x660.jpeg",
+            "unit": "MYTH & ROID",
+            "description": "He do have \"the rainbow colored voice\"",
+            "birthyear": "Unkknown",
+            "rarity": uncommon
+		},
 	},
 	"rare": {
 		"leo fujii": {
@@ -683,7 +709,7 @@ module.exports =
 			"rarity": legendary
 		},
 		"hikaru utada": { 
-            "name": "Utada Hikaru", 
+            "name": "Hikaru Utada", 
             "role": "Vocals/Composition/Lyrics",
             "image": "http://t2.gstatic.com/images?q=tbn:ANd9GcQC_JnriLwTG6GoyF8QMRN5yoaJ4eHMqGzHtJFRek_dFSFqBNaNHE-oO4ZNL-hD",
             "unit": "Cubic U (inactive since 1998)",

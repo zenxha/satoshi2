@@ -15,6 +15,7 @@
     "ascii-table": "0.0.9",
     "discord-player": "^2.3.1",
     "discord.js": "^12.5.1",
+    "discord.js-pagination": "^1.0.3",
     "fs": "^0.0.2",
     "parse-ms": "^2.1.0",
     "quick.db": "^7.1.3",
