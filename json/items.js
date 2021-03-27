@@ -539,7 +539,7 @@ module.exports =
 			"birthyear": 2000,
 			"rarity": rare
 		},
-		"hiro": {
+		"hiroki moriuchi": {
 			"name": "Hiroki Moriuchi",
 			"role": "Vocals/Guitar",
 			"image": "https://pbs.twimg.com/media/EVzbV6DWAAELOPJ.jpg",

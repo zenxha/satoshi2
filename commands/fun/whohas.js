@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const db = require('quick.db')
+const {db} = require('../../db.js')
 const { getRarity } = require("../../functions/itemFunctions.js")
 const items = require('../../json/items.js')
 const ascii = require('ascii-table');
@@ -14,6 +14,7 @@ module.exports.run = async (client, message, args, prefix) => {
     }
     const queryString = args.join(" ").toLowerCase()
     const rarity = getRarity(queryString)
+    console.log(rarity)
     let match;
 
     let all = db.all()// .filter(a => queryString in a.data.inventory)

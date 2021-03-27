@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const db = require('quick.db')
+const {economy} = require('../../db.js')
 const coolDowned = new Set()
 module.exports.run = async (client, message, args, prefix) => {
     if(coolDowned.has(message.author.id)) {
@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args, prefix) => {
       const amount = Math.floor(Math.random() * 100)
       message.channel.send('you find '+ amount)
       if(message.author.id != client.config.ownerid) coolDowned.add(message.author.id)
-
+      economy.add(`${message.author.id}.balance`, amount)
       setTimeout(() => {
         // Removes the user from the set after a minute
         coolDowned.delete(message.author.id);
