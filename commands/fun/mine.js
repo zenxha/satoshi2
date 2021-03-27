@@ -9,14 +9,14 @@ module.exports.run = async (client, message, args, prefix) => {
       }, 250)
     }
     else {
-      const amount = Math.floor(Math.random() * 11)
+      const amount = Math.floor(Math.random() * 100)
       message.channel.send('you find '+ amount)
       if(message.author.id != client.config.ownerid) coolDowned.add(message.author.id)
 
       setTimeout(() => {
         // Removes the user from the set after a minute
         coolDowned.delete(message.author.id);
-      }, 60000);
+      }, 80000);
     }
 
 } 

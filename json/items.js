@@ -14,7 +14,6 @@ module.exports =
 			"description": "Tries to be funny but fails, making him funny",
 			"birthyear": 1993,
 			"rarity": common,
-		
 		},
 		"yu seki": {
 			"name": "Yu Seki",
