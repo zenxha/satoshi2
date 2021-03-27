@@ -10,6 +10,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@devsnowflake/quick.db": "^2.0.3",
     "@discordjs/opus": "^0.3.2",
     "ascii-table": "0.0.9",
     "discord-player": "^2.3.1",

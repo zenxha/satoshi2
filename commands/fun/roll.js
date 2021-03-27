@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const fs = require("fs")
-const db = require('quick.db')
+const {db} = require("../../db.js")
 const ms = require('parse-ms')
 const items = require("../../json/items.js")
 const { randomValue } = require("../../functions/itemFunctions.js")
