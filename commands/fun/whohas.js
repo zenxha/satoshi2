@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args, prefix) => {
     }
     const queryString = args.join(" ").toLowerCase()
     const rarity = getRarity(queryString)
-    console.log(rarity)
+    console.log('Logged rarity on whohas ' + rarity)
     let match;
 
     let all = db.all()// .filter(a => queryString in a.data.inventory)
@@ -67,6 +67,7 @@ module.exports.run = async (client, message, args, prefix) => {
     .setDescription("```css\n" + table + "```")
     .setThumbnail(items[rarity][queryString]['image'])
     .setColor(client.colors[rarity])
+    .setFooter(items[rarity][queryString]['rarity'])
    
     if(!peopleWith[1]) embed.setDescription("```css\n" + table + "```\n  only " + client.users.cache.get(peopleWith[0].id).username + ` and ${queryString} <:distorted:706579468310937631>`)
    
