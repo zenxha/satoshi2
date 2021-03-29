@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const db = require('quick.db')
+const {economy} = require('../../db.js')
 
 module.exports.run = async (client, message, args, prefix) => {
     let target =
@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args, prefix) => {
     ) ||
     message.member;
 
-    const bal = db.get(`${target.id}.balance`) || 0
+    const bal = economy.get(`${target.id}.balance`) || 0
     const embed = new Discord.MessageEmbed()
     .setDescription(`<@!${target.id}> has a balance of $${bal}`)
       message.channel.send(embed)

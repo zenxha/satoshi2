@@ -20,7 +20,7 @@ if (lastRoll !== null && cooldown - (Date.now() - lastRoll) > 0) {
 
   let timeEmbed = new Discord.MessageEmbed()
       .setColor(client.colors.warning)
-      .setDescription(`❌ You've already rolled today. Try again in ${time.hours}h ${time.minutes}m `);
+      .setDescription(`<:pepega:715355087152873513> You've already rolled today. Try again in ${time.hours}h ${time.minutes}m `);
   return message.channel.send(timeEmbed)
 }
 
