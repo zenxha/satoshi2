@@ -144,7 +144,7 @@ module.exports =
 			"role": "Utaite",
 			"image": "https://stpriintro.carrd.co/assets/images/image14.jpg?v21510110916851",
 			"unit": "Strawberry Prince",
-			"description": "none provided",
+			"description": "nannandesuka?",
 			"birthyear": 1998,
 			"rarity": common
 		},
@@ -193,6 +193,33 @@ module.exports =
             "birthyear": 1997,
             "rarity": common
 		},
+		"azki": { 
+            "name": "AZKi", 
+            "role": "Vtuber/Vocals",
+            "image": "https://i.imgur.com/qaRwpwE.jpg",
+            "unit": "Hololive",
+            "description": "Cute and wholesome, she's the last seiso idol left in the world.",
+            "birthyear": "18 years old... forever",
+            "rarity": common
+        },
+		"rim": { 
+            "name": "Rim", 
+            "role": "Vtuber/Vocals",
+            "image": "https://pbs.twimg.com/media/EHo8_ZGU0AEHWYH.jpg",
+            "unit": "KAMITSUBAKI STUDIO",
+            "description": "Resides somewhere in Japan. Might be the same person as Kaf.",
+            "birthyear": 2002,
+            "rarity": common
+        },
+		"taichi mukai": { 
+            "name": "Taichi Mukai", 
+            "role": "Vocals/Composition",
+            "image": "https://i.scdn.co/image/80479cb97a9236714abe82936a4759214dab6bf0",
+            "unit": "N/A",
+            "description": "The underrated jpop Prince",
+            "birthyear": 1978,
+            "rarity": common
+        },
 	},
 	"uncommon": {
 		"daisuke ozasa": {
@@ -219,7 +246,7 @@ module.exports =
 			"image": "https://static.wikia.nocookie.net/nicodougasingers/images/4/49/Delsou.jpg/revision/latest/scale-to-width-down/340?cb=20170531012810",
 			"unit": "N/A",
 			"description": "Close with Eve and Isubokuro",
-			"birthyear": 1992,
+			"birthyear": 1998,
 			"rarity": uncommon
 		},
 		"mariya takeuchi": {
@@ -371,10 +398,46 @@ module.exports =
             "role": "Vocals",
             "image": "https://www.nihonarachochonight.com/wp-content/uploads/2020/08/KIHOW-Web-660x660.jpeg",
             "unit": "MYTH & ROID",
-            "description": "He do have \"the rainbow colored voice\"",
+            "description": "She do have \"the rainbow colored voice\"",
             "birthyear": "Unkknown",
             "rarity": uncommon
 		},
+		"suisei hoshimachi": { 
+            "name": "Suisei Hoshimachi", 
+            "role": "Vtuber/Vocals",
+            "image": "https://i1.sndcdn.com/avatars-HgJ8gUa3i37CRK6g-0cFNjg-t240x240.jpg",
+            "unit": "Hololive",
+            "description": "Suisei no gotoko arewareta, idol vtuber no Hoshimachi Suisei desu! Suichan waaaaaaa~ kyou mou kawaii!!!",
+            "birthyear": "She's 18 years old... forever",
+            "rarity": uncommon,
+        },
+		"aiko": { 
+            "name": "aiko", 
+            "role": "Composition/Vocals/Lyrics/Piano",
+            "image": "https://www.famousbirthdays.com/faces/aiko-image.jpg",
+            "unit": "N/A",
+            "description": "Looks 20 years younger than she looks",
+            "birthyear": 1975,
+            "rarity": uncommon,
+        },
+		"kenta kataoka": { 
+            "name": "Kenta Kataoka", 
+            "role": "Composition/Vocals/Lyrics/Guitar",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjbiguY4hVxr95sGA6fPD8vt0B5h2vOtLfG4VzLj2XZ3kWtc5WkrvVUD8q&s=10",
+            "unit": "sumika",
+            "description": "Kyari kyari mekuri mekuru~",
+            "birthyear": "unknown",
+            "rarity": uncommon
+        },
+		"crystal kay": { 
+            "name": "Crystal Kay", 
+            "role": "Vocals/Dance",
+            "image": "https://www.tokyoweekender.com/wp-content/uploads/2018/06/Screen-Shot-2018-06-12-at-5.41.39-PM-600x449.png",
+            "unit": "none",
+            "description": "Kuri-san!",
+            "birthyear": 1986,
+            "rarity": uncommon
+        },
 	},
 	"rare": {
 		"leo fujii": {
@@ -485,8 +548,8 @@ module.exports =
             "birthyear": 1985,
             "rarity": rare
         },
-		"tk": { 
-            "name": "Toru Kitajima ", 
+		"toru kitajima": { 
+            "name": "Toru Kitajima", 
             "role": " Singer-songwriter and guitarist",
             "image": "https://images-na.ssl-images-amazon.com/images/I/51dJSuiS0-L._SX355_.jpg",
             "unit": "Ling Tosite Sigure",
@@ -576,6 +639,42 @@ module.exports =
             "birthyear": 1996,
             "rarity": rare
 		},
+		"yuuri": { 
+            "name": "Yuuri", 
+            "role": "Vocals/Composition/Lyrics/Guitar ",
+            "image": "https://chillingmood.com/wp-content/uploads/2021/02/yuuri-profile.jpg",
+            "unit": "N/A",
+            "description": "Had like 3 concurrent gfs at one point",
+            "birthyear": "unknown",
+            "rarity": rare
+		},
+		"shizuku": {
+			"name": "Shizuku",
+			"role": "Vocals/Composition/Lyrics/Guitar",
+			"image": "https://64.media.tumblr.com/49faf540cc071c43a55967d242844353/7fe2be5298e6ce58-65/s500x750/47fc38b73c28f5c5a9da3809acbdd47fe13552ab.jpg",
+			"unit": "POLKADOT STINGRAY",
+			"description": ":flushed:",
+			"birthyear": 1992,
+			"rarity": rare
+		},
+		"yui": {
+			"name": "YUI",
+			"role": "Vocals/Composition/Lyrics/Guitar",
+			"image": "http://1.bp.blogspot.com/-Q08j89AoXoc/UPyJMdvpVVI/AAAAAAAAAWY/uVjBBNjkTik/s1600/yui.jpg",
+			"unit": "Flower/Flower",
+			"description": "Is already married || :pensive: ||",
+			"birthyear": 1987,
+			"rarity": rare
+		},
+		"koda kumi": { 
+            "name": "Koda Kumi", 
+            "role": "Vocals/Dance/Lyrics",
+            "image": "https://m.media-amazon.com/images/I/31qh2jt249L._SL1000_.jpg",
+            "unit": "none",
+            "description": "The ero-kakkoi Queen",
+            "birthyear": 1982,
+            "rarity": rare
+        },
 	},
 	"legendary": {
 		"satoshi fujihara": {
@@ -682,7 +781,7 @@ module.exports =
 			"rarity": legendary
 		},
 		"yojiro noda": {
-			"name": "Yojro Noda",
+			"name": "Yojiro Noda",
 			"role": "Vocals/Composition/Lyrics/Guitar",
 			"image": "https://media.vgm.io/artists/09/19990/19990-1470487819.png",
 			"unit": "RADWIMPS",
@@ -695,7 +794,7 @@ module.exports =
 			"role": "Vocals/Composition/Lyrics/Guitar",
 			"image": "https://lastfm.freetls.fastly.net/i/u/avatar170s/777859238868ab26545492d5d5d2836d",
 			"unit": "ZUTOMAYO",
-			"description": "Ate ramen 5 days a week once",
+			"description": "Ate ramen 5 days a week once.\n> 11/10 fashion sense",
 			"birthyear": "unknown",
 			"rarity": legendary
 		},
@@ -724,6 +823,15 @@ module.exports =
             "unit": "Tokyo Jihen",
             "description": ":musical_note: I'll never be able to give up on you, don't say goodbye and kiss me once again.\n> - Taken from her best selling 1999 song *Koko de Kisu Shite*.",
             "birthyear": 1978,
+            "rarity": legendary
+        },
+		"takahiro moriuchi": { 
+            "name": "Takahiro Moriuchi", 
+            "role": "Vocals/Composition/Lyrics/Guitar",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFMlIA5hLqgY33wIXTN_xZ0Boa2z2s7JCRg&usqp=CAU",
+            "unit": "ONE OK ROCK",
+            "description": "BELIEVE THAT TIME!!! IS ALWAYS FOREVER!!!",
+            "birthyear": 1988,
             "rarity": legendary
         },
 
