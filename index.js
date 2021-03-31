@@ -102,7 +102,7 @@ if(newMember.guild.id != '821504863775096852') return
   }
   else if(oldMember.guild.id == '821504863775096852'){
       // User leaves a voice channel
-      client.channels.cache.get('821504864290734122').send(`${client.users.cache.get(oldMember.id)} stopped playing with ${client.channels.cache.get(oldMember.channelID).name}`);
+      client.channels.cache.get('821504864290734122').send(`${client.users.cache.get(oldMember.id).tag} stopped playing with ${client.channels.cache.get(oldMember.channelID).name}`);
   }
 });
 

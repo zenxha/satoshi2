@@ -220,6 +220,15 @@ module.exports =
             "birthyear": 1978,
             "rarity": common
         },
+		"shuta sueyoshi": { 
+            "name": "Shuta Sueyoshi", 
+            "role": "Vocals",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCR9dPco3t4JiicogxpM11tWhBy_WM9l6neMVk92iGPgtPqsO1nDk506Ue&s=10",
+            "unit": "AAA",
+            "description": "Ace’s big lover",
+            "birthyear": 1986,
+            "rarity": common
+        },
 	},
 	"uncommon": {
 		"daisuke ozasa": {
@@ -399,7 +408,7 @@ module.exports =
             "image": "https://www.nihonarachochonight.com/wp-content/uploads/2020/08/KIHOW-Web-660x660.jpeg",
             "unit": "MYTH & ROID",
             "description": "She do have \"the rainbow colored voice\"",
-            "birthyear": "Unkknown",
+            "birthyear": "Unknown",
             "rarity": uncommon
 		},
 		"suisei hoshimachi": { 
@@ -436,6 +445,15 @@ module.exports =
             "unit": "none",
             "description": "Kuri-san!",
             "birthyear": 1986,
+            "rarity": uncommon
+        },
+		"tomoaki fukushima": { 
+            "name": "Tomoaki Fukushima", 
+            "role": "Lyrics/Chorus/Bass",
+            "image": "https://pm1.narvii.com/7695/1738ccca88918b942430af33ed81dbf24d587275r1-1910-1080v2_00.jpg",
+            "unit": "Omoinotake",
+            "description": "Known as Emoaki",
+            "birthyear": 1992,
             "rarity": uncommon
         },
 	},
@@ -720,7 +738,7 @@ module.exports =
 		"kenshi yonezu": {
 			"name": "Kenshi Yonezu",
 			"role": "Vocals/Composition/Lyrics",
-			"image": "https://i1.sndcdn.com/avatars-000296954130-37hzou-t500x500.jpg",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPuFDlxR-PtOpgwzQgz029aMlms56Ols8bRKYoNhf6-fL3U1aFc1hBqsbd8iq9lQiLcac&usqp=CAU",
 			"unit": "N/A",
 			"description": "Current king of JPOP :crown:",
 			"birthyear": 1991,

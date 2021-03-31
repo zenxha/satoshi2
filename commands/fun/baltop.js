@@ -31,7 +31,7 @@ module.exports.run = async (client, message, args, prefix) => {
   const embed = new Discord.MessageEmbed()
   .setDescription(`\`\`\`css\n`+ table+ `\`\`\`\n will be wiped soon `)
   .setColor(message.member.displayHexColor)
-  .setAuthor('Wealthiest Users', message.author.avatarURL())
+  .setAuthor('Wealthiest Users', message.guild.iconURL())
 message.channel.send(embed)
 
 
