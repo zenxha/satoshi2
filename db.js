@@ -1,6 +1,6 @@
 const { Database } = require("@devsnowflake/quick.db");
 const db = new Database("./json.sqlite", { table: "json" });
-const economy = db.createTable("economy")
+const users = db.createTable("users")
 
 module.exports.db = db
-module.exports.economy = economy
+module.exports.users = users
