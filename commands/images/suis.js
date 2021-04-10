@@ -2,7 +2,7 @@ const { getImage } = require('../../functions/getImage.js')
 
 
 module.exports.run = async (client, message, args, prefix) => {
-    message.channel.send(getImage('../../images/suis/', '', 'RANDOM', []))
+    message.channel.send(getImage('../images/suis/', '', 'RANDOM', []))
 } 
 
 module.exports.config = {
