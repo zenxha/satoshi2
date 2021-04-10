@@ -2,7 +2,8 @@ let common = "common"
 let legendary = "legendary"
 let rare = "rare"
 let uncommon = "uncommon"
-
+const { client }
+ = require('../index.js')
 module.exports = 
 {
 	"common": {
@@ -229,6 +230,24 @@ module.exports =
             "birthyear": 1986,
             "rarity": common
         },
+		"yuki uemura": {
+			"name": "Yuki Uemura",
+			"role": "Bass",
+			"image": "https://static.wikia.nocookie.net/jpop/images/4/48/Yuki_unchouten.jpg/revision/latest?cb=20190316114703",
+			"unit": "POLKADOT STINGRAY",
+			"description": "AAAAAAA, Banana man",
+			"birthyear": 1993,
+			"rarity": common,
+		},
+		"kazuma mitsuyasu": {
+			"name": "Kazuma Mitsuyasu",
+			"role": "Drums",
+			"image": "https://static.wikia.nocookie.net/jpop/images/1/14/Kazuma_unchouten.jpg/revision/latest?cb=20190316114737",
+			"unit": "POLKADOT STINGRAY",
+			"description": "Quiet, DRUMS GO BANG BAN BANG",
+			"birthyear": 1992,
+			"rarity": common
+		},
 	},
 	"uncommon": {
 		"daisuke ozasa": {
@@ -425,7 +444,7 @@ module.exports =
             "role": "Composition/Vocals/Lyrics/Piano",
             "image": "https://www.famousbirthdays.com/faces/aiko-image.jpg",
             "unit": "N/A",
-            "description": "Looks 20 years younger than she looks",
+            "description": "Looks 20 years younger than she actually is",
             "birthyear": 1975,
             "rarity": uncommon,
         },
@@ -456,6 +475,42 @@ module.exports =
             "birthyear": 1992,
             "rarity": uncommon
         },
+		"harushi ejima": {
+			"name": "Harushi Ejima",
+			"role": "Guitar",
+			"image": "https://pbs.twimg.com/media/Cu06mr-WAAAUOxU?format=jpg&name=medium",
+			"unit": "POLKADOT STINGRAY",
+			"description": "Chill guitarist, damn good",
+			"birthyear": 1995,
+			"rarity": uncommon
+		},
+		"vickeblanka": {
+			"name": "Vickeblanka",
+			"role": "Vocals/Piano",
+			"image": "https://cdn.myanimelist.net/images/voiceactors/3/53575.jpg",
+			"unit": "Vickeblanka",
+			"description": "High tone voice, **SHEKEBONBON**",
+			"birthyear": 1987,
+			"rarity": uncommon
+		},
+		"ygarshy" : {
+			"name": "Ygarshy",
+			"role": "Bass",
+			"image": "https://pbs.twimg.com/profile_images/1359468078568853507/IzYZpJpZ.jpg",
+			"unit": "Hitorie",
+			"description": "Used to perform shirtless in his older band (Sekkenya).", 
+			"birthyear": "unknown",
+			"rarity": uncommon
+			},
+		"kaf": { 
+			"name": "Kaf", 
+			"role": "Virtual Singer",
+			"image": "https://instagram.flun3-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/131620383_1867546330060723_2121907042513740248_n.jpg?tp=1&_nc_ht=instagram.flun3-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=a0RUSoMM_gEAX_9z7jB&ccb=7-4&oh=380b1a19ddc9aeff8967175022902702&oe=6087F31C&_nc_sid=4f375e",
+			"unit": "KAMITSUBAKI STUDIO",
+			"description": "Virtual singer who is everywhere and nowhere. Might be the same person as Rim.",
+			"birthyear": 2003,
+			"rarity": uncommon
+		},
 	},
 	"rare": {
 		"leo fujii": {
@@ -540,7 +595,7 @@ module.exports =
 			"rarity": rare
 		},
 		"deco*27": { 
-			"name": "Deco27", 
+			"name": "Deco*27", 
 			"role": "Vocaloid Producer",
 			"image": "https://lyricstranslate.com/files/styles/large/public/deco27.jpg?itok=3vB6tCmW",
 			"unit": "N/A",
@@ -754,7 +809,7 @@ module.exports =
 			"rarity": legendary
 		},
 		"lisa": {
-			"name": "Lisa",
+			"name": "LiSa",
 			"role": "Vocals/Lyrics",
 			"image": "https://static.wikia.nocookie.net/jpop/images/5/5c/LiSA_-_Shirushi_promo.jpg/revision/latest/top-crop/width/300/height/300?cb=20191230055220",
 			"unit": "N/A",
@@ -853,5 +908,60 @@ module.exports =
             "rarity": legendary
         },
 
-  } 
+  },
+  "kpop": {
+		"eunha": {
+			"name": "Eunha",
+			"role": "Lead Vocals",
+			"image": "https://cumz.one/9RUZTpJ.png",
+			"unit": "GFRIEND",
+			"description": "not 58", 
+			"birthyear": 1997,
+			"rarity": legendary
+		},
+		"jungkook": {
+			"name": "Jungkook",
+			"role": "Maknae",
+			"image": "https://pbs.twimg.com/profile_images/1298922932798803968/fuskxA9l_400x400.jpg",
+			"unit": "BTS",
+			"description": "kinda cute", 
+			"birthyear": 1997,
+			"rarity": legendary
+		},
+		
+		"zeph": {
+			"name": "zeph",
+			"role": "Maknae",
+			"image": "https://cdn.discordapp.com/avatars/646461443373269012/a_0d250205b87e9c8a75592d3f11364dd5.gif?size=1024",
+			"unit": "BTS",
+			"description": "kinda cute", 
+			"birthyear": 1997,
+			"rarity": legendary
+		},
+		"renjun": {
+			"name": "Renjun",
+			"role": "main vocalist and lead dancer",
+			"image": "https://media.discordapp.net/attachments/820846912034177044/828670324098596944/EyL9XR9UcAAlgaD.jpg",
+			"unit": "nct dream, nct, nct u, nct 2018, nct 2020",
+			"description": "Dont steal this guy from zeph ",
+			"birthyear": 2020,
+		},
+		"jisung": {
+			"name": "jisung",
+			"role": "main dancer",
+			"image": " https://d1o7cxaf8di5ts.cloudfront.net/file/media/origin/2020_02_06/17030287d7646642.jpg",
+			"unit": "nct, nct dream, nct 2018, nct u, nct 2020",
+			"description": "dreams human buzzer",
+			"birthyear": 2002,
+		},
+		"willa": {
+			"name": "Renjun",
+			"role": "main vocalist and lead dancer",
+			"image": "https://cdn.discordapp.com/avatars/759070582930669569/f325abccc532180e6f49ce48083f3b6f.png?size=1024",
+			"unit": "nct dream, nct, nct u, nct 2018, nct 2020",
+			"description": "Dont steal this guy from zeph ",
+			"birthyear": 2020,
+		},
+  },
+
 }
