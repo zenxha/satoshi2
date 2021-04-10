@@ -20,6 +20,12 @@ module.exports = {
       "legendary": "7B19C8",
 
     },
+    "price": {
+      "common": 500,
+      "uncommon": 1000,
+      "rare": 2000,
+      "legendary": 5000,
+    },
     "emotes": {
         "music": "🎶 ",
         "error": "<:notlikethis:758569844630093855>",
