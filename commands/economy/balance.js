@@ -1,5 +1,9 @@
 const Discord = require("discord.js")
-const {economy} = require('../../db.js')
+const {users} = require('../../db.js')
+const fix = (x)=> {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 
 module.exports.run = async (client, message, args, prefix) => {
     let target =
@@ -14,15 +18,15 @@ module.exports.run = async (client, message, args, prefix) => {
     ) ||
     message.member;
 
-    const bal = economy.get(`${target.id}.balance`) || 0
+    const bal = users.get(`${target.id}.balance`) || 0
     const embed = new Discord.MessageEmbed()
-    .setDescription(`<@!${target.id}> has a balance of $${bal}`)
+    .setDescription(`<@!${target.id}> has a balance of $**${fix(bal)}**`)
       message.channel.send(embed)
 } 
 
 module.exports.config = {
   name: "balance",
   description: "View a user's balance",
-  category: "fun",
+  category: "economy",
   aliases: ["bal", "$", "money", "credits"]
 }
