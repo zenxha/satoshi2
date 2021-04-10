@@ -7,7 +7,7 @@ intents.add("GUILD_MESSAGES");
 const client = new Discord.Client({ intents: intents }); // UPDATE TO USE INTENTS
 */
 const client = new Discord.Client()
-
+module.exports.ctx = client
 const config = require("./config.js"); // config
 
 
@@ -18,7 +18,7 @@ client.config = require('./config.js');
 client.emotes = client.config.emotes;
 client.colors = client.config.colors;
 client.items = require("./json/items.js")
-client.secretItems = require("./json/secretItems.js")
+client.treasure = require("./json/treasure.js")
 let table = new ascii("Commands")
 
 
@@ -80,30 +80,5 @@ client.on('message', async message => {
 });
 
 
-client.on('voiceStateUpdate', (oldMember, newMember) => {
-  let newUserChannel = newMember.channelID;
-  let oldUserChannel = oldMember.channelID;
-if(newMember.guild.id != '821504863775096852') return
-  if((newMember.guild.id === "821504863775096852") && (newMember.channelID != null) && (!newMember.selfVideo) && (!newMember.streaming)) //don't remove ""
-  { 
-    if(newMember.selfMute != oldMember.selfMute) return
-    if(newMember.selfDeaf != oldMember.selfDeaf) return
-      // User Joins a voice channel
-      client.channels.cache.get('821504864290734122').send(client.users.cache.get(newMember.id).tag + ' joined ' + client.channels.cache.get(newMember.channelID).name)
-      console.log(newMember)
-  }
-  else if((newMember.guild.id === "821504863775096852") && (newMember.channelID != null) && (newMember.streaming)) //don't remove ""
-  { 
-    if(newMember.selfMute != oldMember.selfMute) return
-    if(newMember.selfDeaf != oldMember.selfDeaf) return
-      // User Joins a voice channel
-      client.channels.cache.get('821504864290734122').send(client.users.cache.get(newMember.id).tag + ' started streaming ' + client.channels.cache.get(newMember.channelID).name)
-      console.log(newMember)
-  }
-  else if(oldMember.guild.id == '821504863775096852'){
-      // User leaves a voice channel
-      client.channels.cache.get('821504864290734122').send(`${client.users.cache.get(oldMember.id).tag} stopped playing with ${client.channels.cache.get(oldMember.channelID).name}`);
-  }
-});
 
 client.login(client.config.token); //This is the heart of the bot
