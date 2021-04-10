@@ -14,6 +14,8 @@ const getRarity = (luckyKey) => {
   if(items['uncommon'][luckyKey])  rarity = 'uncommon'
   if(items['rare'][luckyKey])  rarity = 'rare'
   if(items['legendary'][luckyKey])  rarity = 'legendary'
+  if(items['kpop'][luckyKey])  rarity = 'kpop'
+  
   return rarity
 }
 
