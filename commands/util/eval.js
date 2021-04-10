@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const fs = require("fs")
-const {db, economy} = require('../../db.js')
+const {db, users} = require('../../db.js')
 
 module.exports.run = async (client, message, args) => {
     console.log('a')

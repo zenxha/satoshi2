@@ -59,7 +59,7 @@ module.exports.run = async (client, message, args, prefix) => {
     // */
 
     const embed = new Discord.MessageEmbed()
-    .setDescription(`Commons \n> ${common}\n Uncommons \n> ${uncommon}\n Rares\n> ${rare}\n Legendaries\n> ${legendary}\n\n**${foundCount}/${totalCount} found**`)
+    .setDescription(`Commons \n> ${common}\n Uncommons \n> ${uncommon}\n Rares\n> ${rare}\n Legendaries\n> ${legendary}\n Mythicals\n> 0\n\n**${foundCount}/${totalCount} found**`)
     .setAuthor(`${target.user.username}'s stats`, target.user.avatarURL())
     .setThumbnail(luckyItem.image)
     .setFooter(`Featuring ${luckyItem.name}`)

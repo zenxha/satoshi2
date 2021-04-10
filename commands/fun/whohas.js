@@ -14,7 +14,13 @@ module.exports.run = async (client, message, args, prefix) => {
     }
     const queryString = args.join(" ").toLowerCase()
     const rarity = getRarity(queryString)
-    console.log('Logged rarity on whohas ' + rarity)
+    /*const rarity = Object.keys(items).find(a => {
+        let rarities = Object.keys(items[a])
+        rarities.includes(queryString)
+        console.log(rarities[1])
+    })
+    */
+    console.log('yes ' +rarity)
     let match;
 
     let all = db.all()// .filter(a => queryString in a.data.inventory)
@@ -59,7 +65,9 @@ module.exports.run = async (client, message, args, prefix) => {
     peopleWith.length = 10
     peopleWith.forEach(person => {
          client.users.fetch(person.id)
-         .then(table.addRow(peopleWith.indexOf(person) + 1, person.amount, client.users.cache.get(person.id).tag))
+         .then(
+             table.addRow(peopleWith.indexOf(person) + 1, person.amount, client.users.cache.get(person.id).tag || "unknown user")
+             )
     })
     // console.log(peopleWith.length)
     const embed = new Discord.MessageEmbed()
