@@ -46,7 +46,7 @@ let text = ` **Rarity**: ${rolled.rarity}\n**Band/Unit:** ${rolled.unit}\n**Role
 let logText = `<@${message.author.id}> rolled ${rolled.name} in [**${message.guild.name}**](${msgLink})\n**Rarity**: ${rolled.rarity}\n**User ID** ${message.author.id} \n**Guild ID** ${message.guild.id}`
 
 if(db.has(`${message.author.id}.inventory[${rolled.name.toLowerCase()}]`)) {
-  text+=`\n\nYou've already rolled this person. $**${client.config.price[rolled.rarity]}** has been added to your account`
+  text+=`\n\nYou've already rolled this person. \n$**${client.config.price[rolled.rarity]}** has been added to your account`
   logText+=`\n> Duplicate roll, rewarded an additional $**${client.config.price[rolled.rarity]}**`
   users.add(`${message.author.id}.balance`, client.config.price[rolled.rarity])
 }
@@ -100,7 +100,7 @@ setTimeout(() => {
   
 module.exports.config = {
   name: "roll",
-  description: "roll for someone",
+  description: "roll for a JPOP artist",
   aliases: ['r'],
   usage: ['!r'],
   category: 'fun',

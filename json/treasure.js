@@ -99,8 +99,8 @@ module.exports = {
             "color": '#FF0000'
         },
         "kenshi 1": {
-            "name": "<:kenshibruh:739193595046920273> Kenshi Yonezu",
-            "text": "He's bruh-ing at you. What did you do this time",
+            "name": "<:lemshi:697011089434738721> Kenshi Yonezu",
+            "text": "Woah he's not bruh-ing this time\n> Alas, even as a lemon, he disappears without a trace. \n> And so does your money",
             "id": "kenshi 1",
             "worth": -10
         }
