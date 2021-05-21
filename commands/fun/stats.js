@@ -1,20 +1,11 @@
 const Discord = require("discord.js")
-const db = require('quick.db')
+const {db} = require('../../db.js')
 const { randomValue, randomKey, getRarity, getCount } = require("../../functions/itemFunctions.js")
 const items = require('../../json/items.js')
+const {getUser} = require('../../functions/user.js')
 module.exports.run = async (client, message, args, prefix) => {
 
-    let target =
-    message.mentions.members.first() ||
-    message.guild.members.cache.get(args[0]) ||
-    message.guild.members.cache.find(
-      r =>
-        r.user.username.toLowerCase() === args.join(" ").toLocaleLowerCase()
-    ) ||
-    message.guild.members.cache.find(
-      r => r.displayName.toLowerCase() === args.join(" ").toLocaleLowerCase()
-    ) ||
-    message.member;
+    let target = getUser(client, message, args)
 
 
     let inv =  db.get(`${target.id}.inventory`)

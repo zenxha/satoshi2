@@ -5,7 +5,8 @@ module.exports.run = async (client, message, args, prefix) => {
  // if(message.author.id != client.config.ownerid) return message.channel.send('in maintenance')
   let error = new Discord.MessageEmbed()
   .setColor(client.colors.error)
-  let purchase = shopItems[args.join().toLowerCase()]
+ 
+  let purchase = shopItems[args.join(' ').toLowerCase()]
     if(!purchase) return message.channel.send(error.setDescription(':x: That item doesn\'t exist'))
     let bal = users.get(`${message.author.id}.balance`)
     
@@ -16,7 +17,7 @@ module.exports.run = async (client, message, args, prefix) => {
   const prompt = await message.channel.send(error.setDescription(`${purchase.emote} Are you sure you want to buy 1 **${purchase.name}** for $**${purchase.price}**?\n> Type [ **Y** ] to proceed`).setColor(client.colors.warning))
     message.channel.awaitMessages(m => m.author.id == message.author.id,
       {max: 1, time: 30000}).then(async collected => {
-              // only accept messages by the user who sent the command
+              
               // accept only 1 message, and return the promise after 30000ms = 30s
 
               // first (and, in this case, only) message of the collection
@@ -43,7 +44,7 @@ module.exports.run = async (client, message, args, prefix) => {
                .setTimestamp()
 
                .setThumbnail(message.author.avatarURL({dynamic: true}))
-               client.config.logChannels.forEach(channel => client.channels.cache.get(channel).send(logEmbed))
+               if(message.author.id != client.config.ownerid) client.config.logChannels.forEach(channel => client.channels.cache.get(channel).send(logEmbed))
               }
 
               else {

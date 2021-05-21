@@ -1,14 +1,14 @@
 const Discord = require("discord.js")
-
+const { getUserExact } = require('../../functions/user.js')
 module.exports.run = async (client, message, args, prefix) => {
     message.delete()
-    const msg = await message.channel.send(`<@!${args[0]}>`)
+    const msg = await message.channel.send(`<@!${getUserExact(client, message, args).id}>`)
     msg.delete()
 } 
 
 module.exports.config = {
-  name: "ping",
+  name: "ghostping",
   description: "ghost ping someone",
   category: "stuff",
-  aliases: ["p"]
+  aliases: ["p", "ping", "gp"]
 }

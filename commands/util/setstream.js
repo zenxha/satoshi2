@@ -11,5 +11,6 @@ module.exports.run = async (client, message, args, prefix) => {
 module.exports.config = {
   name: "setstream",
   aliases: ["stream"], 
+  category: 'owner',
   usage: "!setstream {text}"
 }

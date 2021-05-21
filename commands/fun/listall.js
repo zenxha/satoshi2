@@ -21,7 +21,7 @@ module.exports.run = async (client, message, args, prefix) => {
 
 module.exports.config = {
   name: "listall",
-  description: "See a list of all entities",
+  description: "See a list of all rollable entities",
   category: "fun",
   aliases: ["la"]
 }

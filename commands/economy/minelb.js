@@ -16,29 +16,29 @@ module.exports.run = async (client, message, args, prefix) => {
   })
   
   lb.sort((a, b) => {
-    return b.bal-a.bal
+    return b.mines-a.mines
   })
   lb.length = 10
 
 
   const table = new ascii()
   // table.setHeading('#', "Bal", "Mines", 'User')
-  table.setHeading('#', "Bal", 'User')
+  table.setHeading('#', "Trips", 'User')
   table.setHeadingAlignLeft()
   table.removeBorder()
   lb.forEach(person => {
     client.users.fetch(person.id)
     //.then(user => {
       // table.addRow(lb.indexOf(person) + 1, person.bal,person.mines, client.users.cache.get(person.id).tag)
-      table.addRow(lb.indexOf(person) + 1, person.bal, client.users.cache.get(person.id).tag)
+      table.addRow(lb.indexOf(person) + 1, person.mines, client.users.cache.get(person.id).tag)
       //console.log(person.mines)
     //})
 })
-configDB.set('balTop10', lb.map(a => a.id))
+configDB.set('minersTop10', lb.map(a => a.id))
   const embed = new Discord.MessageEmbed()
-  .setDescription(`\`\`\`css\n`+ table+ `\`\`\`\n`)
+  .setDescription(`\`\`\`fix\n`+ table+ `\`\`\`\n`)
   .setColor(message.member.displayHexColor)
-  .setAuthor('Wealthiest Users', message.guild.iconURL())
+  .setAuthor('Most Mines', message.guild.iconURL())
   .setThumbnail(client.users.cache.get(lb[0].id).avatarURL({'dynamic': 'true'}))
 message.channel.send(embed)
 
@@ -46,9 +46,8 @@ message.channel.send(embed)
 } 
 
 module.exports.config = {
-  name: "baltop",
+  name: "minelb",
   description: "View the richest users",
   category: "economy",
-  aliases: ["mlb", "balancelb", "richest", 'moneylb']
+  aliases: ["tm", "topmines", 'topminers']
 }
-

@@ -4,14 +4,27 @@ const {db, users} = require("../../db.js")
 const ms = require('parse-ms')
 const items = require("../../json/items.js")
 const { randomValue } = require("../../functions/itemFunctions.js")
+const coolDowned = new Set()
 module.exports.run = async (client, message, args) => {
 // if(!client.config.testers.includes(message.author.id)) return message.channel.send("still in testing")
 //if(message.guild.id != "673285174800416768") return
+if(coolDowned.has(message.author.id)) {
+  const msg = await message.channel.send("please wait 5s before u run this command again")
 
+  return;
+}
+
+else {
+  setTimeout(() => {
+    // Removes the user from the set after a minute
+    coolDowned.delete(message.author.id);
+  }, 5000);
+  
+  
 const cooldown = 39600000 // 11 hours// 43200000 12 hours
 
 const lastRoll = db.fetch(`${message.author.id}.lastRoll`)
-
+coolDowned.add(message.author.id)
 
 
 
@@ -25,11 +38,11 @@ if (lastRoll !== null && cooldown - (Date.now() - lastRoll) > 0) {
 }
 
 const random = Math.floor(Math.random() * 1000)
-console.log(random)
+console.log('roll random number ' + random)
 let rarity;
-if(random > 550)  rarity = "common"
-else if(random > 200) rarity = "uncommon"
-else if(random > 25) rarity = "rare"
+if(random > 500)  rarity = "common"
+else if(random > 210) rarity = "uncommon"
+else if(random > 10) rarity = "rare"
 else rarity = "legendary" // .55, .3, .175, .025
 
 const initial = new Discord.MessageEmbed()
@@ -62,7 +75,7 @@ db.set(`${message.author.id}.lastRoll`, Date.now()) // remove for no cooldown
 db.add(`${message.author.id}.inventory.${rolled.name.toLowerCase()}`, 1)
 db.add(`${message.author.id}.stats.${rolled.rarity}`, 1)
 db.add(`${message.author.id}.totalRolls`, 1)
-
+if(!db.has(`${message.author.id}.inventory.${rolled.name.toLowerCase()}`)) db.add(`${message.author.id}.totalUnique`, 1)
 // prank start lol
 /*
 const prank = new Discord.MessageEmbed()
@@ -72,6 +85,7 @@ const prank = new Discord.MessageEmbed()
 .setFooter(`${message.author.username}'s roll`, message.author.avatarURL())
 .setColor(client.colors.legendary)
 */
+
 setTimeout(() => {
   msg.edit("**You rolled...**", {embed: embed})
   const logEmbed =  new Discord.MessageEmbed()
@@ -84,9 +98,7 @@ setTimeout(() => {
     client.channels.cache.get(channel).send(logEmbed)
   })
 }, 4000)
-
-
-
+}
 
 
 

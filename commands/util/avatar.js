@@ -1,23 +1,14 @@
 const Discord = require("discord.js")
-
+const { getUser } = require('../../functions/user.js')
 module.exports.run = async (client, message, args, prefix) => {
 
-    let target =
-    message.mentions.members.first() ||
-    message.guild.members.cache.get(args[0]) ||
-    message.guild.members.cache.find(
-      r =>
-        r.user.username.toLowerCase() === args.join(" ").toLocaleLowerCase()
-    ) ||
-    message.guild.members.cache.find(
-      r => r.displayName.toLowerCase() === args.join(" ").toLocaleLowerCase()
-    ) ||
-    client.users.cache.get(args[0]) || 
-    message.member;
+    let target = getUser(client, message, args)
     const pfp = target.user.avatarURL({'dynamic': true, 'size': 4096, 'format': 'png'})
+    const array = ['beautiful', 'amazing', "epic", "cute", "inspiring"]
+    const compliment = array[Math.floor(Math.random()*array.length)]
     const embed = new Discord.MessageEmbed()
     .setImage(pfp)
-    .setDescription(`**[${target.user.tag}'s beautiful profile picture](${pfp})**`)
+    .setDescription(`**[${target.user.tag}'s profile picture](${pfp})**`)
     message.channel.send(embed)
 } 
 

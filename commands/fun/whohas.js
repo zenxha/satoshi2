@@ -65,9 +65,9 @@ module.exports.run = async (client, message, args, prefix) => {
     peopleWith.length = 10
     peopleWith.forEach(person => {
          client.users.fetch(person.id)
-         .then(
+            if(message.author.id == person.id) return table.addRow('> '+ (peopleWith.indexOf(person) + 1).toString(), person.amount, client.users.cache.get(person.id).tag || "unknown user")
              table.addRow(peopleWith.indexOf(person) + 1, person.amount, client.users.cache.get(person.id).tag || "unknown user")
-             )
+         
     })
     // console.log(peopleWith.length)
     const embed = new Discord.MessageEmbed()

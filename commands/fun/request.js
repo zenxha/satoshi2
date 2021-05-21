@@ -49,7 +49,7 @@ collector.on('collect', m => {
     .setFooter('Success', message.author.avatarURL())
   
     message.channel.send(success)
-    client.channels.cache.get('828074693188911144').send(success.setFooter(message.guild.name).setDescription(`\`\`\`json\n${m.content}\n\`\`\``).setAuthor(message.author.tag, message.author.avatarURL()))
+    client.channels.cache.get('828074693188911144').send(success.setFooter(message.guild.name).setDescription(`\`\`\`json\n${m.content}\n\`\`\`\nUser id ${message.author.id}`).setAuthor(message.author.tag, message.author.avatarURL()))
 	msg.delete()
 });
 } 

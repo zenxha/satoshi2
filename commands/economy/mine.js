@@ -22,8 +22,8 @@ module.exports.run = async (client, message, args, prefix) => {
       else if(factor > 10) item = randomValue(items.rare)
       else if(factor == 1) item = randomValue(items.ultra)
       else item = randomValue(items.superrare)
-      console.log(factor)
-      console.log(item)
+     
+      console.log(message.author.tag +' mined', item)
       
 
 

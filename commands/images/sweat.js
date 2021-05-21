@@ -8,6 +8,7 @@ module.exports.run = async (client, message, args) => {
 module.exports.config = {
   name: "sweat",
   category: "images",
-  aliases: [],
-  description: "Get an image of satocchan"
+  aliases: ['sw'],
+  description: "Bootleg Satocchan photobook but free and online",
+  usage: "!sweat"
 }

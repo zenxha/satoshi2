@@ -9,10 +9,10 @@ module.exports.run = async (client, message, args, prefix) => {
     text.push(`${shop[item].emote} ${shop[item].name}\n> $**${shop[item].price}**\n> ${shop[item].description}`)
   }
  const embed = new Discord.MessageEmbed()
- .setAuthor(`Satoshi's shop`, client.user.avatarURL())
+ .setAuthor(`Satoshi's shop`, 'http://owo.whats-th.is/6bngewr.png')
  .setDescription(text.join('\n'))
-
- .setFooter('Use !buy to buy an item | Current bal: $'+users.get(`${message.author.id}.balance`))
+.setImage('https://pbs.twimg.com/media/DcUZBJOXcAECqKA.jpg')
+ .setFooter('Use !buy to buy an item • Current bal: $'+users.get(`${message.author.id}.balance`), message.author.avatarURL())
  .setColor('RANDOM')
  
 message.channel.send(embed)
@@ -22,7 +22,7 @@ message.channel.send(embed)
 
 module.exports.config = {
   name: "shop",
-  description: "View some sweet deals",
+  description: "Check out some sweet deals",
   category: "economy",
   aliases: ["store", 'market']
 }
