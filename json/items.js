@@ -218,7 +218,7 @@ module.exports =
             "image": "https://i.scdn.co/image/80479cb97a9236714abe82936a4759214dab6bf0",
             "unit": "N/A",
             "description": "The underrated jpop Prince",
-            "birthyear": 1978,
+            "birthyear": 1992,
             "rarity": common
         },
 		"shuta sueyoshi": { 
@@ -244,8 +244,216 @@ module.exports =
 			"role": "Drums",
 			"image": "https://static.wikia.nocookie.net/jpop/images/1/14/Kazuma_unchouten.jpg/revision/latest?cb=20190316114737",
 			"unit": "POLKADOT STINGRAY",
-			"description": "Quiet, DRUMS GO BANG BAN BANG",
+			"description": "Quiet",
 			"birthyear": 1992,
+			"rarity": common
+		},
+		"misa": {
+			"name": "Misa",
+			"role": "Bass Guitar",
+			"image": "https://64.media.tumblr.com/7a22a5f427186cf2a8ffc18470ebb1d0/tumblr_pgsh0bZ10u1xaccnxo1_640.jpg",
+			"unit": "Band-Maid",
+			"description": "Nicknamed 'the barefoot assassin', drinks strong alcohol (whiskey) even during concerts.",
+			"birthyear": 1992,
+			"rarity": common
+		},
+		"hotaka yamashita": {
+			"name": "Hotaka Yamashita",
+			"role": "Guitar/Harmonica/Lyrics/Composition/Piano",
+			"image": "https://www.generasia.com/w/images/3/3c/Yamashita_Hotaka_-_Identity_promo.jpg",
+			"unit": "Ikimono-gakari",
+			"description": "Usually writes the B-sides singles",
+			"birthyear": 1982,
+			"rarity": common
+		},
+		"tomoya kanki": {
+			"name": "Tomoya Kanki",
+			"role": "Drums/Percussions/Xylophone",
+			"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tomoya_Kanki_2_cropped_2.jpg/800px-Tomoya_Kanki_2_cropped_2.jpg",
+			"unit": "ONE OK ROCK",
+			"description": "Eldest member of OOR, Married in 2017 and has 3 sons",
+			"birthyear": 1987,
+			"rarity": common
+		},
+		"yuka kashino": {
+			"name": "Yuka Kashino",
+			"role": "Vocals/Dance",
+			"image": "https://static.wikia.nocookie.net/jpop/images/a/a7/Kawajpn.jpg/revision/latest/scale-to-width-down/449?cb=20200419132945",
+			"unit": "Perfume",
+			"description": "Nicknamed Kashiyuka, friends with singer Kyary Pamyu Pamyu",
+			"birthyear": 1988,
+			"rarity": common,
+		},
+		"ayano oomoto": {
+			"name": "Ayano Oomoto",
+			"role": "Vocals/Dance",
+			"image": "https://static.wikia.nocookie.net/jpop/images/5/56/Noccjpn.jpg/revision/latest/scale-to-width-down/250?cb=20161117231622",
+			"unit": "Perfume",
+			"description": "Nicknamed Nocchi, Joined Perfume in 2001 after being asked by A-chan, Fan of One Piece series",
+			"birthyear": 1988,
+			"rarity": common
+		},
+		"ayaka nishiwaki": {
+			"name": "Ayaka Nishiwaki",
+			"role": "Vocals/Dance",
+			"image": "https://static.wikia.nocookie.net/jpop/images/7/7d/250px-achanjpn.jpg/revision/latest/scale-to-width-down/300?cb=20191214111449",
+			"unit": "Perfume",
+			"description": "Nicknamed A-chan, Founding member of Perfume with Kashiyuka, Her younger sister, Sayaka Nishiwaki is a member of girlgroup 9nine",
+			"birthyear": 1989,
+			"rarity": common,
+		},
+		"ruki shiroiwa": {
+			"name": "Ruki Shiroiwa",
+			"role": "Vocals/Rap",
+			"image": "https://i.pinimg.com/originals/23/b4/42/23b442e8e184e36760e216ca57af2d5b.jpg",
+			"unit": "JO1",
+			"description": "Was in another boygroup before this",
+			"birthyear": 1997,
+			"rarity": common
+		},
+		"ryoka fujisawa": {
+			"name": "Ryoka Fujisawa",
+			"role": "Piano",
+			"image": "https://static.wikia.nocookie.net/jpop/images/e/e7/Ryoka_Romanticism.png/revision/latest?cb=20190418123956",
+			"unit": "Mrs. GREEN APPLE",
+			"description": "Second oldest member of MGA",
+			"birthyear": 1993,
+			"rarity": common
+		},
+		"kiyokatsu takano": {
+			"name": "Kiyokatsu Takano",
+			"role": "Bass",
+			"image": "https://static.wikia.nocookie.net/jpop/images/0/09/Kiyokatsu_Romanticism.png/revision/latest/scale-to-width-down/500?cb=20190418124944",
+			"unit": "Mrs. GREEN APPLE",
+			"description": "Eldest member of MGA, Joined MGA in 2014 after the former, Takumi Matsuo left",
+			"birthyear": 1991,
+			"rarity": common,
+		},
+		"yumao" : {
+			"name": "Yumao",
+			"role": "Drums ",
+			"image": "https://cdn.discordapp.com/attachments/747991033811566772/834646486230368277/image0.jpg",
+			"unit": "Hitorie",
+			"description": "hes not as serious as he seems in that picture, he's quite the opposite. <:uwu:769058048874119198> " ,
+			"birthyear": 1988,
+			"rarity": common
+		},
+		"kazuki ozaki": {
+			"name": "Kazuki Ozaki",
+			"role": "Drums",
+			"image": "https://i.ibb.co/mtHhTzb/67366-352712284853662-1103856867962924224-n.jpg",
+			"unit": "BBHF",
+			"description": "Dahyun simp",
+			"birthyear": 1993,
+			"rarity": common
+		},
+		"dj love": {
+			"name": "DJ LOVE",
+			"role": "DJ/Sampling/Drums/Bass/Percussions",
+			"image": "https://pm1.narvii.com/6607/1a7f376f5c58312931600a93715e3b4d1884fc08_hq.jpg",
+			"unit": "SEKAI NO OWARI",
+			"description": "Clown DJ and also icon/mascot of SNO as well.\n> Married in 2018 with gravure artist Erika Ura",
+			"birthyear": 1985,
+			"rarity": common
+		},
+		"inoo kei": {
+			"name": "Inoo Kei",
+			"role": "Vocalist",
+			"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFlirYr1W87qZNox_FfO5VWgsrcH02uH6IQ&usqp=CAU",
+			"unit": "Hey! Say! JUMP",
+			"description": "Graduated Meiji University with a major in Architecture (wow smart)",
+			"birthyear": 1990,
+			"rarity": common
+
+		},
+		"shosei ohira": { 
+			"name": "Shosei Ohira", 
+			"role": "Vocals", 
+			"image": "https://nordot-res.cloudinary.com/c_limit,w_800,f_auto,q_auto:eco/ch/images/716399308731695104/origin_1.jpg", 
+			"unit": "JO1", 
+			"description": "Hates himself because he can only write in kanji", 
+			"birthyear": 2000,
+			"rarity": common
+		},
+		"kento nakajima": {
+			"name": "Kento Nakajima",
+			"role": "Vocalist",
+			"image": "https://i.pinimg.com/236x/d7/3b/f1/d73bf1c12baff3e5feab7dae96f1f3f3.jpg",
+			"unit": "Sexy Zone",
+			"description": "sexy sangkyu",
+			"birthyear": 1994,
+			"rarity": common
+		},
+		"juri tanaka": {
+			"name": "Juri Tanaka",
+			"role": "Rapper",
+			"image": "https://pm1.narvii.com/6350/a0d9a19beef3b3415e6c9104f6d514f4ee252fc3_hq.jpg",
+			"unit": "SixTONES",
+			"description": "Jem's husband ",
+			"birthyear": 1995,
+			"rarity": common
+		},
+		"yukihiro": {
+			"name": "Yukihiro",
+			"role": "Drums/Percussions/Vocals/Bass/Lyrics",
+			"image": "https://www.generasia.com/w/images/thumb/f/f2/Yukihiro.jpg/450px-Yukihiro.jpg",
+			"unit": "L'Arc~en~Ciel/Acid Android",
+			"description": "Joined Laruku in 1997 as a supporting drummer and became the official drummer in 1998 replacing Sakura",
+			"birthyear": 1968,
+			"rarity": common
+		},
+		"maito raul murakami": { 
+			"name": "Maito Raul Murakami", 
+			"role": "Vocals", 
+			"image": "https://i.pinimg.com/564x/6e/3d/ab/6e3dab17944c885af4b961ef4c270b2c.jpg​​", 
+			"unit": "Snow Man", 
+			"description": "A very tall, half Venezuelan child", 
+			"birthyear": 2003,
+			"rarity": common
+		},
+		"issei mamehara": {
+			 "name": "Issei Mamehara", 
+			 "role": "Vocals", 
+			 "image": "https://i.pinimg.com/564x/d3/e0/13/d3e013cfde9d5c5ab58e77e9b61ce411.jpg​​​​​", 
+			 "unit": "JO1", 
+			 "description": "Won the first season of Produce 101 Japan on rank 1", 
+			 "birthyear": 2002,
+			 "rarity": common
+	},
+		"daiki arioka": {
+			"name": "Daiki Arioka",
+			"role": "Vocals",
+			"image": "https://i.pinimg.com/564x/a3/13/9f/a3139f87a421e900df0f78e020223e33.jpg",
+			"unit": "Hey! Say! JUMP & Hey! Say! BEST",
+			"description": "DJ Daiki, supaa ikemen boy also forever 15 yo",
+			"birthyear": 1991,
+			"rarity": common
+		},
+		"yuri chinen": {
+			"name": "Yuri Chinen",
+			"role": "Vocals",
+			"image": "https://i.pinimg.com/564x/ef/71/2c/ef712c572500233fe6b503230a18408e.jpg",
+			"unit": "Hey! Say! JUMP & Hey! Say! 7",
+			"description": "158 cm idol, ryosuke's wallet 👁️👄👁️",
+			"birthyear": 1993,
+			"rarity": common
+		},
+		"furui riho": {
+			"name": "Furui Riho",
+			"role": "Vocals/Composition/Lyrics",
+			"image": "https://park-cf.gsj.mobi/contents/Wg4Jd75EUm.jpg",
+			"unit": "soloist",
+			"description": "Main genre is R&B",
+			"birthyear": 1991,
+			"rarity": common
+		},
+		"shintaro": {
+			"name": "Shintaro",
+			"role": "Guitar",
+			"image": "http://owo.whats-th.is/4M9HmB3.png",
+			"unit": "Uverworld",
+			"description": "Sleeps a lot",
+			"birthyear": 1983,
 			"rarity": common
 		},
 	},
@@ -480,7 +688,7 @@ module.exports =
 			"role": "Guitar",
 			"image": "https://pbs.twimg.com/media/Cu06mr-WAAAUOxU?format=jpg&name=medium",
 			"unit": "POLKADOT STINGRAY",
-			"description": "Chill guitarist, damn good",
+			"description": "Chill guitarist",
 			"birthyear": 1995,
 			"rarity": uncommon
 		},
@@ -489,7 +697,7 @@ module.exports =
 			"role": "Vocals/Piano",
 			"image": "https://cdn.myanimelist.net/images/voiceactors/3/53575.jpg",
 			"unit": "Vickeblanka",
-			"description": "High tone voice, **SHEKEBONBON**",
+			"description": "High tone voice",
 			"birthyear": 1987,
 			"rarity": uncommon
 		},
@@ -509,6 +717,222 @@ module.exports =
 			"unit": "KAMITSUBAKI STUDIO",
 			"description": "Virtual singer who is everywhere and nowhere. Might be the same person as Rim.",
 			"birthyear": 2003,
+			"rarity": uncommon
+		},
+		"masamune kusano": {
+			"name": "Masamune Kusano",
+			"role": "Vocals/Guitar/Lyrics/Composition",
+			"image": "https://media.vgm.io/artists/00/24600/24600-1477947597.jpg",
+			"unit": "Spitz",
+			"description": "Likes words that have \"sp\" in it",
+			"birthyear": 1967,
+			"rarity": uncommon
+		},
+		"kanami toono": {
+			"name": "Kanami Toono",
+			"role": "Composition/Lead Guitar/Backing Vocals",
+			"image": "https://i.pinimg.com/736x/0f/34/19/0f34190a202ef59bf5892dc56b72d8a9.jpg",
+			"unit": "Band-Maid",
+			"description": "Nicknamed Kanamincho, she switched to guitar at age 20 after 17 years of piano.  She is now Miku Kobato's guitar teacher",
+			"birthyear": 1991,
+			"rarity": uncommon,
+		},
+		"akane hirose": {
+			"name": "Akane Hirose",
+			"role": "Drums",
+			"image": "http://pm1.narvii.com/7003/76de200474ef8fba1079f3c6c4a8274110b67c4cr1-422-398v2_00.jpg",
+			"unit": "Band-Maid",
+			"description": "Nicknamed A-Chan, or 'the gorilla'. Can eat 5 bowls of ramen, 30 plates in a Kaiten Sushi and 130 bowls of soba",
+			"birthyear": 1990,
+			"rarity": uncommon
+		},
+		"reona": {
+			"name": "ReoNa",
+			"role": "Vocals/Guitar",
+			"image": "https://www.generasia.com/w/images/thumb/f/f0/ReoNa_-_unknown_promo.jpg/800px-ReoNa_-_unknown_promo.jpg",
+			"unit": "N/A",
+			"description": "Elza Kanzaki, an active Arknights player",
+			"birthyear": 1998,
+			"rarity": uncommon
+		},
+		"yoshiki mizuno": {
+			"name": "Yoshiki Mizuno",
+			"role": "Guitar/Lyrics/Composition/Piano",
+			"image": "https://www.generasia.com/w/images/d/d3/Mizuno_Yoshiki_-_Identity_promo.jpg",
+			"unit": "Ikimono-gakari",
+			"description": "Usually writes the A-sides singles.\n> A baseball fan",
+			"birthyear": 1982,
+			"rarity": uncommon
+		},
+		"miku nakamura": {
+			"name": "Miku Nakamura", 
+            "role": "Vocals/Guitar",
+            "image": "https://i.scdn.co/image/f391a78900adfa47ece0e9feccbe423583ba7210",
+            "unit": "Cö shu nie",
+            "description": "chaotic voice",
+            "birthyear": 1987,
+             "rarity": uncommon
+		},
+		"ryota kohama": {
+			"name": "Ryota Kohama",
+			"role": "Bass/Piano",
+			"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ryota_Kohama_2017_3.jpg/220px-Ryota_Kohama_2017_3.jpg",
+			"unit": "ONE OK ROCK",
+			"description": "Usually takes off his shirt when performing, Fan of Red Hot Chili Peppers",
+			"birthyear": 1989,
+			"rarity": uncommon
+		},
+		"rie kaneko": {
+			"name": "Rie Kaneko",
+			"role": "Vocals",
+			"image": "https://static.wikia.nocookie.net/jpop/images/0/05/Rie_pelo.jpeg",
+			"unit": "LADYBABY",
+			"description": "Founding member of LADYBABY",
+			"birthyear": 1997,
+			"rarity": uncommon
+		},
+		"ayaka yamanaka": {
+			"name": "Ayaka Yamanaka",
+			"role": "Drums",
+			"image": "https://static.wikia.nocookie.net/jpop/images/4/44/Ayaka_Romanticism.png/revision/latest/scale-to-width-down/500?cb=20190418122406",
+			"unit": "Mrs. GREEN APPLE",
+			"description": "The only female in the green apple",
+			"birthyear": 1995,
+			"rarity": uncommon
+		},
+		"mone kamishiraishi": {
+			"name": "Mone Kamishiraishi",
+			"role": "Vocals/Composition/Actress",
+			"image": "https://wiki.d-addicts.com/images/b/b8/Kamishiraishi_Mone.jpg",
+			"unit": "N/A",
+			"description": "Played a role in Your Name.",
+			"birthyear": 1998,
+			"rarity": uncommon
+		},
+		"saori fujisaki": {
+			"name": "Saori Fujisaki",
+			"role": "Piano",
+			"image": "https://media.discordapp.net/attachments/821652962942124083/834651093572780082/saori.jpg?width=853&height=568",
+			"unit": "SEKAI NO OWARI",
+			"description": "Has a license to teach piano.",
+			"birthyear": 1985,
+			"rarity": uncommon
+		},
+		"yuuki ozaki": {
+			"name": "Yuuki Ozaki",
+			"role": "Lead Vocal/Songwriter",
+			"image": "https://i.pinimg.com/564x/e6/3f/23/e63f23892d48f95818c28db5e1f39197.jpg",
+			"unit": "BBHF",
+			"description": "His hair is better than yours",
+			"birthyear": 1991,
+			"rarity": uncommon
+		},
+		"nakajin": {
+			"name": "Nakajin",
+			"role": "Guitar/Leader/Vocals/Chorus",
+			"image": "https://static.wikia.nocookie.net/jpop/images/8/87/Nakajima_Shinichi.jpg/revision/latest/scale-to-width-down/1000?cb=20200320175924",
+			"unit": "SEKAI NO OWARI",
+			"description": "Leader of SNO, Married in 2017",
+			"birthyear": 1985,
+			"rarity": uncommon
+		},
+		"eir aoi": {
+			"name": "Eir Aoi",
+			"role": "Vocals/Lyrics",
+			"image": "https://www.generasia.com/w/images/thumb/e/e8/Eir_Aoi_-_Fragment_%28Promotional%29.jpg/800px-Eir_Aoi_-_Fragment_%28Promotional%29.jpg",
+			"unit": "N/A",
+			"description": "Anisong singer who was discovered through Nico Nico Douga site, Fan of Final Fantasy series",
+			"birthyear": 1988,
+			"rarity": uncommon
+		},
+		"asca": {
+			"name": "ASCA",
+			"role": "Vocals",
+			"image": "https://static.wikia.nocookie.net/jpop/images/b/b7/ASCA_Nov_2019.jpg/revision/latest?cb=20191120220234",
+			"unit": "N/A",
+			"description": "Powerful voice, Anisong singer who was started singing career with her real name, Asuka Okura in 2013",
+			"birthyear": 1996,
+			"rarity": uncommon
+		},
+		"nanawo akari": {
+			"name": "Nanawo Akari",
+			"role": "Vocals/Guitar/Rap",
+			"image": "https://static.wikia.nocookie.net/nicodougasingers/images/6/62/Nanawo_akari.png/revision/latest/scale-to-width-down/295?cb=20170106172649",
+			"unit": "N/A",
+			"description": "Dame Tenshi\n> Fan of Vocaloid and DECO*27",
+			"birthyear": 1995,
+			"rarity": uncommon
+		},
+		"akira kuwahara": {
+			"name": "Akira Kuwahara",
+			"role": "Chorus/Composition/Guitar",
+			"image": "https://naesushi.files.wordpress.com/2017/01/kuwahara-akira.jpg",
+			"unit": "RADWIMPS",
+			"description": "Joined his band in highschool.",
+			"birthyear": 1985,
+			"rarity": uncommon
+		},
+		"hyde": {
+			"name": "HYDE",
+			"role": "Vocals/Lyrics/Composition/Guitar",
+			"image": "https://www.generasia.com/w/images/thumb/4/49/HYDE_-_LET_IT_OUT_promo.jpg/800px-HYDE_-_LET_IT_OUT_promo.jpg",
+			"unit": "L'Arc~en~Ciel/VAMPS",
+			"description": "Was in the band Jerusalem's Rod before joining Laruku",
+			"birthyear": 1969,
+			"rarity": uncommon
+		},
+		"ken": {
+			"name": "Ken",
+			"role": "Guitar/Vocals/Lyrics",
+			"image": "https://www.generasia.com/w/images/thumb/1/1a/ThePartyKENPROMO2.jpg/400px-ThePartyKENPROMO2.jpg",
+			"unit": "L'Arc~en~Ciel",
+			"description": "Joined Laruku in 1992 after being asked by his friend Tetsuya, Formed his own band named SONS OF ALL PUSSYS in 2002 during Laruku's break activities",
+			"birthyear": 1968,
+			"rarity": uncommon
+		},
+		"koresawa": {
+			"name": "Koresawa",
+			"role": "Vocals/Composition/Lyrics",
+			"image": "https://lastfm.freetls.fastly.net/i/u/ar0/86a6bf642fddb2b6019bba5806afbfb1.jpg",
+			"unit": "N/A",
+			"description": "Calls her fans korenzu 「コレンズ」",
+			"birthyear": 1992,
+			"rarity": uncommon
+		},
+		"eill": {
+			"name": "eill/S",
+			"role": "Vocals/Composition/Lyrics",
+			"image": "https://www.generasia.com/w/images/thumb/f/f0/eill_-_Koko_de_Iki_wo_Shite_promo.jpg/500px-eill_-_Koko_de_Iki_wo_Shite_promo.jpg",
+			"unit": "Soloist",
+			"description": "You either LOVE/LIKE/HATE her music",
+			"birthyear": 1998,
+			"rarity": uncommon,
+		},
+		"rei kuromiya": {
+			"name": "Rei Kuromiya",
+			"role": "Vocals",
+			"image": "https://static.wikia.nocookie.net/jpop/images/5/5a/KuromiyaRei_Oct2020.jpg/revision/latest/scale-to-width-down/1000?cb=20201105200317",
+			"unit": "BRATS",
+			"description": "Singer of BRATS, previous member of LADYBABY",
+			"birthyear": 2000,
+			"rarity": uncommon,
+		},
+		"iri": {
+			"name": "iri",
+			"role": "Vocals/Composition/Lyrics",
+			"image": "https://m.media-amazon.com/images/I/31dVYGdgN+L._SL1000_.jpg",
+			"unit": "Soloist",
+			"description": "very low voice",
+			"birthyear": 1994,
+			"rarity": uncommon
+		},
+		"miyavi": {
+			"name": "MIYAVI",
+			"role": "Guitar/Vocals/Lyrics/Composition",
+			"image": "https://cdns.klimg.com/resized/630x/g/m/i/miyavi_rockstar_jepang_yang_lebarkan_sayap_ke_film_hollywood/miyavi-20180202-006-rita.jpg",
+			"unit": "N/A",
+			"description": "Samurai Guitarist of Korean descent, Was appointed an official UNHCR Goodwill Ambassador in 2017.",
+			"birthyear": 1981,
 			"rarity": uncommon
 		},
 	},
@@ -561,7 +985,7 @@ module.exports =
 		"mako": {
 			"name": "Mako",
 			"role": "Leader",
-			"image": "https://i.redd.it/7vssgxn5l9u51.jpg",
+			"image": "http://kpopmembersbio.com/wp-content/uploads/2020/11/Mako.jpg",
 			"unit": "NiziU",
 			"description": "Can eat a lemon with a straight face",
 			"birthyear": 2001,
@@ -748,6 +1172,105 @@ module.exports =
             "birthyear": 1982,
             "rarity": rare
         },
+		"motoki ohmori": {
+			"name": "Motoki Ohmori",
+			"role": "Vocals/Guitar/Lyric/Composition",
+			"image": "https://static.wikia.nocookie.net/jpop/images/b/b0/Mokoto_Romanticism.png/revision/latest/scale-to-width-down/834?cb=20200413152423",
+			"unit": "Mrs. GREEN APPLE",
+			"description": "Started creating music at the age of 12",
+			"birthyear": 1996,
+			"rarity": rare
+		},
+		"kiyoe yoshioka": {
+			"name": "Kiyoe Yoshioka",
+			"role": "Vocals",
+			"image": "https://www.generasia.com/w/images/3/38/Yoshioka_Kiyoe_-_Identity_promo.jpg",
+			"unit": "Ikimono-gakari",
+			"description": "Married in 2020",
+			"birthyear": 1984,
+			"rarity": rare
+		},
+		"miku kobato": {
+			"name": "Miku Kobato",
+			"role": "Leader/Lyrics/Vocals/Guitar",
+			"image": "http://vignette2.wikia.nocookie.net/jpop/images/7/7a/Kobamiku.jpg/revision/latest?cb=20160924113828",
+			"unit": "Band-Maid",
+			"description": "Nicknamed the pigeon, she often ends her sentences with 'po' (cooing onomatopoeia)",
+			"birthyear": 1991,
+			"rarity": rare
+		},
+		"saiki atsumi": {
+			"name": "Saiki Atsumi",
+			"role": "Lead Vocals",
+			"image": "https://pm1.narvii.com/7003/84528328ad676b5bbc574ccf3f032ca0d15bc169r1-1080-1350v2_hq.jpg",
+			"unit": "Band-Maid",
+			"description": "Nicknamed Sai-Chan or 'the ice queen', she was first an actress where she played the role of a nurse in 'Blue Moon Nigh'.",
+			"birthyear": 1994,
+			"rarity": rare,
+		},
+		"yuuko suzuhana": {
+			"name": "Yuuko Suzuhana",
+			"role": "Vocals/Piano/Composition",
+			"image": "https://static.wikia.nocookie.net/jpop/images/f/f3/Suzuhana_Yuuko_2020.jpg/revision/latest/scale-to-width-down/1000?cb=20201017184205",
+			"unit": "Wagakki Band",
+			"description": "Vocal Goddess, Fan of Mika Nakashima",
+			"birthyear": "N/A",
+			"rarity": rare
+		},
+		"toru yamashita": {
+			"name": "Toru Yamashita",
+			"role": "Guitar/Composition",
+			"image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Toru_Yamashita%2C_et_al_2017_cropped.jpg",
+			"unit": "ONE OK ROCK",
+			"description": "Leader of OOR, Formerly dancer and ex-member of boygroup HEADS",
+			"birthyear": 1988,
+			"rarity": rare
+		},
+		"shinoda" : {
+			"name": "Shinoda",
+			"role": "Vocals/Guitar",
+			"image": "https://pbs.twimg.com/profile_images/1377637165010579460/pK5kxjpE_400x400.jpg",
+			"unit": "Hitorie",
+			"description": "haha wet Shinoda",
+			"birthyear": "Unknown",
+			"rarity": rare
+			},
+		"yoohei kawakami": {
+			"name": "Yoohei Kawakami",
+			"role": "Vocals/Composition/Guitar",
+			"image": "https://media.discordapp.net/attachments/810378964006731816/832408142825521182/image0.jpg",
+			"unit": "[Alexandros]",
+			"description": "His bands original name was [Champagne]",
+			"birthyear": 1982,
+			"rarity": rare
+			},
+		"hiroto wakai": {
+			"name": "Hiroto Wakai",
+			"role": "Guitar/Leader",
+			"image": "https://static.wikia.nocookie.net/jpop/images/1/13/Hiroto_Romanticism.png/revision/latest/scale-to-width-down/500?cb=20190418121925",
+			"unit": "Mrs. GREEN APPLE",
+			"description": "Leader of MGA, decide to make a band after met Motoki",
+			"birthyear": 1996,
+			"rarity": rare
+		},
+		"uru": {
+			"name": "Uru",
+			"role": "Vocals/Lyric/Composition",
+			"image": "https://static.wikia.nocookie.net/jpop/images/6/6e/Uru_-_First_Love_%28Promotional_photo%29.png/revision/latest/scale-to-width-down/750?cb=20210112122911",
+			"unit": "N/A",
+			"description": "In 2013, she launched her official YouTube channel and started uploading cover videos of many popular songs",
+			"birthyear": "N/A",
+			"rarity": rare
+		},
+		"tetsuya": {
+			"name": "TETSUYA",
+			"role": "Bass/Leader/Vocals/Guitar/Composition",
+			"image": "https://www.generasia.com/w/images/thumb/2/2d/Tetsu_%282009%29.jpg/424px-Tetsu_%282009%29.jpg",
+			"unit": "L'Arc~en~Ciel",
+			"description": "Owns over 120 basses and 20 guitars\n> Married model Ayana Sakai in 2007",
+			"birthyear": 1969,
+			"rarity": rare
+		},
 	},
 	"legendary": {
 		"satoshi fujihara": {
@@ -932,7 +1455,7 @@ module.exports =
 		"zeph": {
 			"name": "zeph",
 			"role": "Maknae",
-			"image": "https://cdn.discordapp.com/avatars/646461443373269012/a_0d250205b87e9c8a75592d3f11364dd5.gif?size=1024",
+			"image":  "https://cdn.discordapp.com/attachments/802342721821605948/836970632209498122/304c968e1a8839b312fee5a06dfb6968.png",
 			"unit": "BTS",
 			"description": "kinda cute", 
 			"birthyear": 1997,

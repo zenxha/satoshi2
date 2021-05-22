@@ -60,7 +60,7 @@ module.exports = {
             "worth": 1,
         },
         "brncea's lost cousin": {
-            "name": ":blowfish: brncea's lost cousin",
+            "name": [":blowfish: brncea's lost cousin", "<:pogfish:715357455000797195> brncea's lost cousin",][Math.floor(Math.random()*2)],
             "text": "What's he doing here?",
             "id": "brncea's lost cousin",
             "worth": 20,
