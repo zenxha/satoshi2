@@ -55,7 +55,7 @@ client.once("ready", () => {
     
     let playing = client.voice.connections.size; 
 
-     client.user.setPresence({ activity: { name: `cheer up baby`, type: "STREAMING", url: "https://www.twitch.tv/piptea_" } })
+     // client.user.setPresence({ activity: { name: `^.-`, type: "STREAMING", url: "https://www.twitch.tv/piptea_" } })
 
 });
 
@@ -73,6 +73,7 @@ client.on('message', async message => {
   
    try {
      commandFile.run(client, message, args, config.prefix);
+     console.log(`\n ${message.author.tag} ${message.author.id} executed command ${commandFile.config.name}`)
    } catch(e) {
      return message.channel.send(`An error occured on ${command}:\n ${e.message}`)
    }
