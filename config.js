@@ -32,6 +32,7 @@ module.exports = {
         "errorID": "758569844630093855",
         "success": "<:02Deal:717110338440658994>",
         "successID": "717110338440658994",
+        'loading': "<a:loading:833410989059080222>",
         "repeat": "🔁",
         "pause": "⏸️",
         "resume": "⏯️",
