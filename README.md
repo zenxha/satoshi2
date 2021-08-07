@@ -19,7 +19,7 @@ npm install ffmpeg-static
 
 ## Configuration
 
-Go and edit in config/bot.json, make changes below to use it!
+Go and edit in config.json, make changes below to use it!
 
 ```json
 {
