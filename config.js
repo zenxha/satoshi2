@@ -4,7 +4,7 @@ const db = require('quick.db')
 module.exports = {
     "ownerid": "303901005710360576",
     "prefix": "!",
-    "token": "NzAyMzgwNjczNjI0NzAzMDQ3.XrxJGw.waU6TDS-sLDBRbiJpy4Sy9sML2s",
+    "token": "insert token here",
     "inviteURL": "https://discord.com/oauth2/authorize?client_id=702380673624703047&scope=bot&permissions=8",
     "supportServer": "https://discord.gg/gMtauTz", //if any
     "testers": ["303901005710360576", "702380673624703047"],
